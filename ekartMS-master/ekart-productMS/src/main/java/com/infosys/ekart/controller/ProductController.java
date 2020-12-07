@@ -71,13 +71,13 @@ public class ProductController {
 		return ResponseEntity.ok(priceComparisonList);
 	}
 
-	/*
+	
 	@GetMapping(value = ApplicationConstants.GET_RECOMMENDATIONS, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<List<RecommendationModel>> getRecommendations(@PathVariable String userId) {
 		List<RecommendationModel> recommendationsList = new ArrayList<>();
 		recommendationsList = productService.getRecommendations(userId);
 		return ResponseEntity.ok(recommendationsList);
-	}*/
+	}
 
 	// Ashish US-34,35
 	@RequestMapping(value = "/product/add/{sellerId}", method = RequestMethod.POST, headers = "Accept=application/json")

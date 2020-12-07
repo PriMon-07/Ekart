@@ -18,7 +18,7 @@ public interface ProductService {
 
 	List<DealsModel> getDeals();
 	List<PriceComparisonModel> priceComparison(String productName);
-	//List<RecommendationModel> getRecommendations(String userId);
+	List<RecommendationModel> getRecommendations(String userId);
 	void addProduct(ProductDTO productDTO) throws ProductNameAlreadyPresent;
 	void searchByProductNameAndSellerId(String productName, String sellerId) throws ProductNameAlreadyPresent;
 	void updatePriceAndDiscount(String sellerId,String displayName, Float price, Float discount);

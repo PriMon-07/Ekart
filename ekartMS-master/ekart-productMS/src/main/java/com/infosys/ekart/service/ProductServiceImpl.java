@@ -95,7 +95,7 @@ public class ProductServiceImpl implements ProductService {
 		return priceComparisonList;
 	}
 
-	/*
+	
 	@Override
 	public List<RecommendationModel> getRecommendations(String userId) {
 		List<RecommendationModel> recommendationList = new ArrayList<>();
@@ -126,7 +126,7 @@ public class ProductServiceImpl implements ProductService {
 		recommendationList.addAll(recommendationMap.values());
 		return recommendationList;
 	}
-*/
+
 	// Ashish US34,35
 	public void addProduct(ProductDTO productDTO) throws ProductNameAlreadyPresent {
 		searchByProductNameAndSellerId(productDTO.getDisplayName(), productDTO.getSellerId());
