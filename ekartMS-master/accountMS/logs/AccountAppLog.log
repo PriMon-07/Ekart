@@ -3067,3 +3067,41 @@ Caused by: java.lang.IllegalArgumentException: The given id must not be null!
 2020-12->07 18:29:48.416  INFO Poulamis-MacBook-Pro.local --- [ender@210d3a42}] c.n.l.BaseLoadBalancer                   : Client: localhost instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
 2020-12->07 18:29:48.427  INFO Poulamis-MacBook-Pro.local --- [ender@210d3a42}] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
 2020-12->07 18:29:48.429  INFO Poulamis-MacBook-Pro.local --- [ender@210d3a42}] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client localhost initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@49cc4c6e
+2020-12->07 18:33:36.346  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 18:38:36.354  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 18:43:36.362  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 18:48:36.371  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 18:53:36.384  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 18:58:36.393  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 19:03:36.404  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 19:08:36.415  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 19:13:36.426  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 19:18:36.443  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 19:23:36.455  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 19:28:36.467  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 19:33:37.895  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 19:47:11.878  WARN Poulamis-MacBook-Pro.local --- [l-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m6s613ms).
+2020-12->07 19:51:14.457  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 19:56:14.461  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 20:01:14.469  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 20:06:14.467  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 20:11:14.471  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 20:16:14.477  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 20:21:14.487  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 20:26:14.489  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 20:31:14.495  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 20:36:14.501  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 20:41:14.504  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 20:46:14.512  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 20:51:14.483  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 20:56:14.486  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 21:01:14.490  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 21:06:14.634  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 21:11:14.643  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 21:16:14.654  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 21:21:14.654  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 21:26:14.664  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 21:31:14.672  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 21:36:14.666  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 21:41:14.672  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 21:46:14.682  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
