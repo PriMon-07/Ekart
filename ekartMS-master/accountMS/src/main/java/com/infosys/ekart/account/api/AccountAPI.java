@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -46,7 +47,7 @@ public class AccountAPI {
 		return new ResponseEntity<BaseResponse>(response, HttpStatus.OK);
 	}
 
-	@PostMapping(UPDATE_DETAIL_URI)
+	@PutMapping(UPDATE_DETAIL_URI)
 	public ResponseEntity<BaseResponse> updateDetail(@Valid @RequestBody User user, @PathVariable String userId)
 			throws ErrorOnServerException, UserNotFoundException, UserNotLoggedInException {
 		Boolean isAuthenticated = service.checkUser(userId);

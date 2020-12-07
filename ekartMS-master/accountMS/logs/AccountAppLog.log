@@ -1797,3 +1797,1273 @@ Verify the connector's configuration, identify and stop any process that's liste
 2020-12->07 17:52:02.707  INFO Poulamis-MacBook-Pro.local --- [freshExecutor-0] c.n.d.DiscoveryClient                    : Application version is -1: false
 2020-12->07 17:52:02.707  INFO Poulamis-MacBook-Pro.local --- [freshExecutor-0] c.n.d.DiscoveryClient                    : Getting all instance registry info from the eureka server
 2020-12->07 17:52:02.726  INFO Poulamis-MacBook-Pro.local --- [freshExecutor-0] c.n.d.DiscoveryClient                    : The response status is 200
+2020-12->07 17:56:32.648  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 18:01:32.656  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 18:06:32.714  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 18:08:54.170 ERROR Poulamis-MacBook-Pro.local --- [nio-5000-exec-2] c.i.e.a.u.LoggingAspect                  : The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:367)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:255)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:527)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:153)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy161.findById(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy161.findById(Unknown Source)
+	at com.infosys.ekart.account.serviceImpl.UserServiceImpl.addNewUser(UserServiceImpl.java:38)
+	at com.infosys.ekart.account.serviceImpl.UserServiceImpl$$FastClassBySpringCGLIB$$ac2c8363.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.infosys.ekart.account.serviceImpl.UserServiceImpl$$EnhancerBySpringCGLIB$$ad02d8d1.addNewUser(<generated>)
+	at com.infosys.ekart.account.api.AccountAPI.addNewUser(AccountAPI.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:154)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:122)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.IllegalArgumentException: The given id must not be null!
+	at org.springframework.util.Assert.notNull(Assert.java:198)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:222)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:359)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:644)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:608)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$invoke$3(RepositoryFactorySupport.java:595)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:595)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	... 106 more
+2020-12->07 18:09:31.472 ERROR Poulamis-MacBook-Pro.local --- [nio-5000-exec-3] c.i.e.a.u.LoggingAspect                  : The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:367)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:255)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:527)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:153)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy161.findById(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy161.findById(Unknown Source)
+	at com.infosys.ekart.account.serviceImpl.UserServiceImpl.addNewUser(UserServiceImpl.java:38)
+	at com.infosys.ekart.account.serviceImpl.UserServiceImpl$$FastClassBySpringCGLIB$$ac2c8363.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.infosys.ekart.account.serviceImpl.UserServiceImpl$$EnhancerBySpringCGLIB$$ad02d8d1.addNewUser(<generated>)
+	at com.infosys.ekart.account.api.AccountAPI.addNewUser(AccountAPI.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:154)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:122)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.IllegalArgumentException: The given id must not be null!
+	at org.springframework.util.Assert.notNull(Assert.java:198)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:222)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:359)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:644)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:608)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$invoke$3(RepositoryFactorySupport.java:595)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:595)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	... 106 more
+2020-12->07 18:11:27.554  INFO Poulamis-MacBook-Pro.local --- [n(24)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12->07 18:11:27.559  INFO Poulamis-MacBook-Pro.local --- [n(24)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ACCOUNTMS with eureka with status DOWN
+2020-12->07 18:11:27.561  WARN Poulamis-MacBook-Pro.local --- [n(24)-127.0.0.1] c.n.d.DiscoveryClient                    : Saw local status change event StatusChangeEvent [timestamp=1607344887560, current=DOWN, previous=UP]
+2020-12->07 18:11:27.562  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:8c736d31faf55a4048874b4d7e06307b: registering service...
+2020-12->07 18:11:27.568  INFO Poulamis-MacBook-Pro.local --- [n(24)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12->07 18:11:27.572  INFO Poulamis-MacBook-Pro.local --- [n(24)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12->07 18:11:27.584  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:8c736d31faf55a4048874b4d7e06307b - registration status: 204
+2020-12->07 18:11:28.144  WARN Poulamis-MacBook-Pro.local --- [ender@6c1b82cd}] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eurekaRibbonClientConfiguration': Unsatisfied dependency expressed through field 'eurekaConfig'; nested exception is org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2020-12->07 18:11:28.147  INFO Poulamis-MacBook-Pro.local --- [n(24)-127.0.0.1] c.n.d.DiscoveryClient                    : Shutting down DiscoveryClient ...
+2020-12->07 18:11:31.153  INFO Poulamis-MacBook-Pro.local --- [n(24)-127.0.0.1] c.n.d.DiscoveryClient                    : Unregistering ...
+2020-12->07 18:11:31.162  INFO Poulamis-MacBook-Pro.local --- [n(24)-127.0.0.1] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:8c736d31faf55a4048874b4d7e06307b - deregister  status: 200
+2020-12->07 18:11:31.282  INFO Poulamis-MacBook-Pro.local --- [n(24)-127.0.0.1] c.n.d.DiscoveryClient                    : Completed shut down of DiscoveryClient
+2020-12->07 18:11:31.283  INFO Poulamis-MacBook-Pro.local --- [n(24)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-12->07 18:11:31.290  INFO Poulamis-MacBook-Pro.local --- [n(24)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-12->07 18:11:31.291  INFO Poulamis-MacBook-Pro.local --- [n(24)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:11:31.345  INFO Poulamis-MacBook-Pro.local --- [n(24)-127.0.0.1] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2020-12->07 18:11:31.347  INFO Poulamis-MacBook-Pro.local --- [n(24)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-12->07 18:11:31.351  INFO Poulamis-MacBook-Pro.local --- [n(24)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:11:31.354  INFO Poulamis-MacBook-Pro.local --- [n(24)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:11:36.075  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$67acfde5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12->07 18:11:36.189  INFO Poulamis-MacBook-Pro.local --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:1111
+2020-12->07 18:11:37.343  INFO Poulamis-MacBook-Pro.local --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=AccountMS, profiles=[default], label=null, version=57cae71bf93f480f3c97bd165243c6ee626aa525, state=null
+2020-12->07 18:11:37.343  INFO Poulamis-MacBook-Pro.local --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/Poulami-Sarkar/ekart-config//AccountMS.properties'}, MapPropertySource {name='https://github.com/Poulami-Sarkar/ekart-config//application.properties'}]}
+2020-12->07 18:11:37.374  INFO Poulamis-MacBook-Pro.local --- [           main] c.i.e.a.AccountServiceApplication        : No active profile set, falling back to default profiles: default
+2020-12->07 18:11:37.892  INFO Poulamis-MacBook-Pro.local --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12->07 18:11:37.945  INFO Poulamis-MacBook-Pro.local --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48ms. Found 1 repository interfaces.
+2020-12->07 18:11:38.010  WARN Poulamis-MacBook-Pro.local --- [           main] o.s.b.a.e.EndpointId                     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-12->07 18:11:38.252  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=73281aa8-eef8-3c59-9e4c-c924078eafc5
+2020-12->07 18:11:38.452  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4b92fae8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12->07 18:11:38.489  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$67acfde5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12->07 18:11:38.860  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 5000 (http)
+2020-12->07 18:11:38.871  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:11:38.877  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-12->07 18:11:38.877  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/9.0.12
+2020-12->07 18:11:38.889  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/poulamisarkar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-12->07 18:11:39.022  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-12->07 18:11:39.023  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1640 ms
+2020-12->07 18:11:39.184  WARN Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2020-12->07 18:11:39.185  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12->07 18:11:39.200  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.DynamicPropertyFactory             : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5e6522a6
+2020-12->07 18:11:40.089  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-12->07 18:11:40.089  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-12->07 18:11:40.089  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'tracingFilter' to: [/*]
+2020-12->07 18:11:40.089  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-12->07 18:11:40.090  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-12->07 18:11:40.090  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'formContentFilter' to: [/*]
+2020-12->07 18:11:40.090  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2020-12->07 18:11:40.090  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpTraceFilter' to: [/*]
+2020-12->07 18:11:40.090  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2020-12->07 18:11:40.175  INFO Poulamis-MacBook-Pro.local --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12->07 18:11:40.178  WARN Poulamis-MacBook-Pro.local --- [           main] c.z.h.u.DriverDataSource                 : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-12->07 18:11:40.454  INFO Poulamis-MacBook-Pro.local --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12->07 18:11:40.498  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12->07 18:11:40.555  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.3.7.Final}
+2020-12->07 18:11:40.556  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2020-12->07 18:11:40.670  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-12->07 18:11:40.801  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-12->07 18:11:41.229  INFO Poulamis-MacBook-Pro.local --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12->07 18:11:41.569  WARN Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2020-12->07 18:11:41.570  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12->07 18:11:41.903  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12->07 18:11:41.962  WARN Poulamis-MacBook-Pro.local --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12->07 18:11:42.653  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-12->07 18:11:42.683  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12->07 18:11:42.683  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-12->07 18:11:42.696  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Completed initialization in 13 ms
+2020-12->07 18:11:42.746  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.n.e.InstanceInfoFactory            : Setting initial instance status as: STARTING
+2020-12->07 18:11:42.796  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Initializing Eureka in region us-east-1
+2020-12->07 18:11:42.860  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using JSON encoding codec LegacyJacksonJson
+2020-12->07 18:11:42.860  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using JSON decoding codec LegacyJacksonJson
+2020-12->07 18:11:43.016  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using XML encoding codec XStreamXml
+2020-12->07 18:11:43.016  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using XML decoding codec XStreamXml
+2020-12->07 18:11:43.230  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 18:11:43.254  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Disable delta property : false
+2020-12->07 18:11:43.254  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Single vip registry refresh property : null
+2020-12->07 18:11:43.254  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Force full registry fetch : false
+2020-12->07 18:11:43.254  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Application is null : false
+2020-12->07 18:11:43.255  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Registered Applications size is zero : true
+2020-12->07 18:11:43.255  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Application version is -1: true
+2020-12->07 18:11:43.255  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Getting all instance registry info from the eureka server
+2020-12->07 18:11:43.351  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : The response status is 200
+2020-12->07 18:11:43.355  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Starting heartbeat executor: renew interval is: 30
+2020-12->07 18:11:43.360  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.InstanceInfoReplicator             : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12->07 18:11:43.369  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Discovery Client initialized at timestamp 1607344903368 with initial instances count: 1
+2020-12->07 18:11:43.380  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ACCOUNTMS with eureka with status UP
+2020-12->07 18:11:43.380  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Saw local status change event StatusChangeEvent [timestamp=1607344903380, current=UP, previous=STARTING]
+2020-12->07 18:11:43.382  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:3a86f5a5cae5fe6b82c7b8066493f188: registering service...
+2020-12->07 18:11:43.389  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:11:43.396  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:3a86f5a5cae5fe6b82c7b8066493f188 - registration status: 204
+2020-12->07 18:11:43.399  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2020-12->07 18:11:43.409  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 5000 (http) with context path ''
+2020-12->07 18:11:43.409  INFO Poulamis-MacBook-Pro.local --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 5000
+2020-12->07 18:11:43.412  INFO Poulamis-MacBook-Pro.local --- [           main] c.i.e.a.AccountServiceApplication        : Started AccountServiceApplication in 7.69 seconds (JVM running for 8.849)
+2020-12->07 18:12:01.959  WARN Poulamis-MacBook-Pro.local --- [nio-5000-exec-1] o.s.w.s.PageNotFound                     : Request method 'POST' not supported
+2020-12->07 18:16:43.269  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 18:17:11.283  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12->07 18:17:11.286  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ACCOUNTMS with eureka with status DOWN
+2020-12->07 18:17:11.287  WARN Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] c.n.d.DiscoveryClient                    : Saw local status change event StatusChangeEvent [timestamp=1607345231287, current=DOWN, previous=UP]
+2020-12->07 18:17:11.288  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:3a86f5a5cae5fe6b82c7b8066493f188: registering service...
+2020-12->07 18:17:11.296  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12->07 18:17:11.297  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:3a86f5a5cae5fe6b82c7b8066493f188 - registration status: 204
+2020-12->07 18:17:11.300  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12->07 18:17:12.250  WARN Poulamis-MacBook-Pro.local --- [ender@29188050}] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eurekaRibbonClientConfiguration': Unsatisfied dependency expressed through field 'eurekaConfig'; nested exception is org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2020-12->07 18:17:12.254  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] c.n.d.DiscoveryClient                    : Shutting down DiscoveryClient ...
+2020-12->07 18:17:15.258  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] c.n.d.DiscoveryClient                    : Unregistering ...
+2020-12->07 18:17:15.259  WARN Poulamis-MacBook-Pro.local --- [scoveryClient-0] c.n.d.TimedSupervisorTask                : task supervisor shutting down, can't accept the task
+2020-12->07 18:17:15.264  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:3a86f5a5cae5fe6b82c7b8066493f188 - deregister  status: 200
+2020-12->07 18:17:15.401  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] c.n.d.DiscoveryClient                    : Completed shut down of DiscoveryClient
+2020-12->07 18:17:15.401  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-12->07 18:17:15.410  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-12->07 18:17:15.411  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:17:15.466  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2020-12->07 18:17:15.467  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-12->07 18:17:15.471  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:17:15.475  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:17:19.177  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f5ed04fc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12->07 18:17:19.283  INFO Poulamis-MacBook-Pro.local --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:1111
+2020-12->07 18:17:20.213  INFO Poulamis-MacBook-Pro.local --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=AccountMS, profiles=[default], label=null, version=57cae71bf93f480f3c97bd165243c6ee626aa525, state=null
+2020-12->07 18:17:20.213  INFO Poulamis-MacBook-Pro.local --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/Poulami-Sarkar/ekart-config//AccountMS.properties'}, MapPropertySource {name='https://github.com/Poulami-Sarkar/ekart-config//application.properties'}]}
+2020-12->07 18:17:20.242  INFO Poulamis-MacBook-Pro.local --- [           main] c.i.e.a.AccountServiceApplication        : No active profile set, falling back to default profiles: default
+2020-12->07 18:17:20.854  INFO Poulamis-MacBook-Pro.local --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12->07 18:17:20.911  INFO Poulamis-MacBook-Pro.local --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51ms. Found 1 repository interfaces.
+2020-12->07 18:17:20.993  WARN Poulamis-MacBook-Pro.local --- [           main] o.s.b.a.e.EndpointId                     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-12->07 18:17:21.361  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=73281aa8-eef8-3c59-9e4c-c924078eafc5
+2020-12->07 18:17:21.605  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d9d301ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12->07 18:17:21.636  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f5ed04fc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12->07 18:17:21.986  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 5000 (http)
+2020-12->07 18:17:21.996  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:17:22.001  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-12->07 18:17:22.002  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/9.0.12
+2020-12->07 18:17:22.010  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/poulamisarkar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-12->07 18:17:22.132  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-12->07 18:17:22.132  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1883 ms
+2020-12->07 18:17:22.275  WARN Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2020-12->07 18:17:22.275  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12->07 18:17:22.290  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.DynamicPropertyFactory             : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7d1cdeb1
+2020-12->07 18:17:23.170  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-12->07 18:17:23.170  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-12->07 18:17:23.170  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'tracingFilter' to: [/*]
+2020-12->07 18:17:23.170  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-12->07 18:17:23.170  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-12->07 18:17:23.171  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'formContentFilter' to: [/*]
+2020-12->07 18:17:23.171  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2020-12->07 18:17:23.171  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpTraceFilter' to: [/*]
+2020-12->07 18:17:23.171  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2020-12->07 18:17:23.258  INFO Poulamis-MacBook-Pro.local --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12->07 18:17:23.263  WARN Poulamis-MacBook-Pro.local --- [           main] c.z.h.u.DriverDataSource                 : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-12->07 18:17:23.516  INFO Poulamis-MacBook-Pro.local --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12->07 18:17:23.557  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12->07 18:17:23.615  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.3.7.Final}
+2020-12->07 18:17:23.616  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2020-12->07 18:17:23.718  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-12->07 18:17:23.821  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-12->07 18:17:24.271  INFO Poulamis-MacBook-Pro.local --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12->07 18:17:24.656  WARN Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2020-12->07 18:17:24.656  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12->07 18:17:25.011  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12->07 18:17:25.080  WARN Poulamis-MacBook-Pro.local --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12->07 18:17:25.817  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-12->07 18:17:25.851  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12->07 18:17:25.851  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-12->07 18:17:25.865  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Completed initialization in 14 ms
+2020-12->07 18:17:25.921  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.n.e.InstanceInfoFactory            : Setting initial instance status as: STARTING
+2020-12->07 18:17:25.990  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Initializing Eureka in region us-east-1
+2020-12->07 18:17:26.069  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using JSON encoding codec LegacyJacksonJson
+2020-12->07 18:17:26.070  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using JSON decoding codec LegacyJacksonJson
+2020-12->07 18:17:26.465  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using XML encoding codec XStreamXml
+2020-12->07 18:17:26.466  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using XML decoding codec XStreamXml
+2020-12->07 18:17:26.962  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 18:17:27.001  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Disable delta property : false
+2020-12->07 18:17:27.001  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Single vip registry refresh property : null
+2020-12->07 18:17:27.002  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Force full registry fetch : false
+2020-12->07 18:17:27.002  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Application is null : false
+2020-12->07 18:17:27.002  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Registered Applications size is zero : true
+2020-12->07 18:17:27.002  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Application version is -1: true
+2020-12->07 18:17:27.002  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Getting all instance registry info from the eureka server
+2020-12->07 18:17:27.137  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : The response status is 200
+2020-12->07 18:17:27.145  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Starting heartbeat executor: renew interval is: 30
+2020-12->07 18:17:27.151  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.InstanceInfoReplicator             : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12->07 18:17:27.166  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Discovery Client initialized at timestamp 1607345247164 with initial instances count: 1
+2020-12->07 18:17:27.186  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ACCOUNTMS with eureka with status UP
+2020-12->07 18:17:27.187  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Saw local status change event StatusChangeEvent [timestamp=1607345247187, current=UP, previous=STARTING]
+2020-12->07 18:17:27.190  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:d72cecb624de38cef2c74191b552fcb4: registering service...
+2020-12->07 18:17:27.206  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:17:27.223  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:d72cecb624de38cef2c74191b552fcb4 - registration status: 204
+2020-12->07 18:17:27.230  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2020-12->07 18:17:27.278  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 5000 (http) with context path ''
+2020-12->07 18:17:27.280  INFO Poulamis-MacBook-Pro.local --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 5000
+2020-12->07 18:17:27.283  INFO Poulamis-MacBook-Pro.local --- [           main] c.i.e.a.AccountServiceApplication        : Started AccountServiceApplication in 8.474 seconds (JVM running for 9.498)
+2020-12->07 18:18:08.085 ERROR Poulamis-MacBook-Pro.local --- [nio-5000-exec-2] c.i.e.a.u.LoggingAspect                  : The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:367)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:255)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:527)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:153)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy163.findById(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy163.findById(Unknown Source)
+	at com.infosys.ekart.account.serviceImpl.UserServiceImpl.addNewUser(UserServiceImpl.java:38)
+	at com.infosys.ekart.account.serviceImpl.UserServiceImpl$$FastClassBySpringCGLIB$$ac2c8363.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.infosys.ekart.account.serviceImpl.UserServiceImpl$$EnhancerBySpringCGLIB$$cc7c3224.addNewUser(<generated>)
+	at com.infosys.ekart.account.api.AccountAPI.addNewUser(AccountAPI.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:154)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:122)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.IllegalArgumentException: The given id must not be null!
+	at org.springframework.util.Assert.notNull(Assert.java:198)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:222)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:359)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:644)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:608)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$invoke$3(RepositoryFactorySupport.java:595)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:595)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	... 106 more
+2020-12->07 18:18:42.190  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12->07 18:18:42.191  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ACCOUNTMS with eureka with status DOWN
+2020-12->07 18:18:42.192  WARN Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] c.n.d.DiscoveryClient                    : Saw local status change event StatusChangeEvent [timestamp=1607345322192, current=DOWN, previous=UP]
+2020-12->07 18:18:42.192  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:d72cecb624de38cef2c74191b552fcb4: registering service...
+2020-12->07 18:18:42.195  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12->07 18:18:42.196  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:d72cecb624de38cef2c74191b552fcb4 - registration status: 204
+2020-12->07 18:18:42.197  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12->07 18:18:42.655  WARN Poulamis-MacBook-Pro.local --- [ender@3f122cdc}] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eurekaRibbonClientConfiguration': Unsatisfied dependency expressed through field 'eurekaConfig'; nested exception is org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2020-12->07 18:18:42.658  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] c.n.d.DiscoveryClient                    : Shutting down DiscoveryClient ...
+2020-12->07 18:18:45.663  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] c.n.d.DiscoveryClient                    : Unregistering ...
+2020-12->07 18:18:45.671  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:d72cecb624de38cef2c74191b552fcb4 - deregister  status: 200
+2020-12->07 18:18:45.788  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] c.n.d.DiscoveryClient                    : Completed shut down of DiscoveryClient
+2020-12->07 18:18:45.789  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-12->07 18:18:45.795  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-12->07 18:18:45.796  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:18:45.851  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2020-12->07 18:18:45.853  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-12->07 18:18:45.856  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:18:45.860  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:18:49.896  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a5ad58f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12->07 18:18:49.990  INFO Poulamis-MacBook-Pro.local --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:1111
+2020-12->07 18:18:50.869  INFO Poulamis-MacBook-Pro.local --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=AccountMS, profiles=[default], label=null, version=57cae71bf93f480f3c97bd165243c6ee626aa525, state=null
+2020-12->07 18:18:50.869  INFO Poulamis-MacBook-Pro.local --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/Poulami-Sarkar/ekart-config//AccountMS.properties'}, MapPropertySource {name='https://github.com/Poulami-Sarkar/ekart-config//application.properties'}]}
+2020-12->07 18:18:50.903  INFO Poulamis-MacBook-Pro.local --- [           main] c.i.e.a.AccountServiceApplication        : No active profile set, falling back to default profiles: default
+2020-12->07 18:18:51.611  INFO Poulamis-MacBook-Pro.local --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12->07 18:18:51.675  INFO Poulamis-MacBook-Pro.local --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56ms. Found 1 repository interfaces.
+2020-12->07 18:18:51.771  WARN Poulamis-MacBook-Pro.local --- [           main] o.s.b.a.e.EndpointId                     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-12->07 18:18:52.077  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=73281aa8-eef8-3c59-9e4c-c924078eafc5
+2020-12->07 18:18:52.269  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ee40d292] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12->07 18:18:52.308  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a5ad58f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12->07 18:18:52.707  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 5000 (http)
+2020-12->07 18:18:52.719  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:18:52.725  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-12->07 18:18:52.725  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/9.0.12
+2020-12->07 18:18:52.735  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/poulamisarkar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-12->07 18:18:52.864  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-12->07 18:18:52.864  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1953 ms
+2020-12->07 18:18:52.994  WARN Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2020-12->07 18:18:52.994  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12->07 18:18:53.015  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.DynamicPropertyFactory             : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4ac19bc6
+2020-12->07 18:18:53.879  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-12->07 18:18:53.879  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-12->07 18:18:53.880  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'tracingFilter' to: [/*]
+2020-12->07 18:18:53.880  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-12->07 18:18:53.880  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-12->07 18:18:53.880  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'formContentFilter' to: [/*]
+2020-12->07 18:18:53.880  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2020-12->07 18:18:53.880  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpTraceFilter' to: [/*]
+2020-12->07 18:18:53.881  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2020-12->07 18:18:53.968  INFO Poulamis-MacBook-Pro.local --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12->07 18:18:53.972  WARN Poulamis-MacBook-Pro.local --- [           main] c.z.h.u.DriverDataSource                 : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-12->07 18:18:54.216  INFO Poulamis-MacBook-Pro.local --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12->07 18:18:54.254  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12->07 18:18:54.304  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.3.7.Final}
+2020-12->07 18:18:54.305  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2020-12->07 18:18:54.423  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-12->07 18:18:54.533  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-12->07 18:18:54.943  INFO Poulamis-MacBook-Pro.local --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12->07 18:18:55.333  WARN Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2020-12->07 18:18:55.333  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12->07 18:18:55.645  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12->07 18:18:55.708  WARN Poulamis-MacBook-Pro.local --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12->07 18:18:56.379  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-12->07 18:18:56.409  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12->07 18:18:56.409  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-12->07 18:18:56.422  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Completed initialization in 13 ms
+2020-12->07 18:18:56.471  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.n.e.InstanceInfoFactory            : Setting initial instance status as: STARTING
+2020-12->07 18:18:56.518  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Initializing Eureka in region us-east-1
+2020-12->07 18:18:56.572  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using JSON encoding codec LegacyJacksonJson
+2020-12->07 18:18:56.572  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using JSON decoding codec LegacyJacksonJson
+2020-12->07 18:18:56.702  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using XML encoding codec XStreamXml
+2020-12->07 18:18:56.702  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using XML decoding codec XStreamXml
+2020-12->07 18:18:56.920  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 18:18:56.945  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Disable delta property : false
+2020-12->07 18:18:56.945  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Single vip registry refresh property : null
+2020-12->07 18:18:56.946  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Force full registry fetch : false
+2020-12->07 18:18:56.946  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Application is null : false
+2020-12->07 18:18:56.946  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Registered Applications size is zero : true
+2020-12->07 18:18:56.946  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Application version is -1: true
+2020-12->07 18:18:56.946  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Getting all instance registry info from the eureka server
+2020-12->07 18:18:57.044  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : The response status is 200
+2020-12->07 18:18:57.048  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Starting heartbeat executor: renew interval is: 30
+2020-12->07 18:18:57.053  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.InstanceInfoReplicator             : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12->07 18:18:57.061  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Discovery Client initialized at timestamp 1607345337060 with initial instances count: 1
+2020-12->07 18:18:57.072  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ACCOUNTMS with eureka with status UP
+2020-12->07 18:18:57.073  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Saw local status change event StatusChangeEvent [timestamp=1607345337073, current=UP, previous=STARTING]
+2020-12->07 18:18:57.074  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:f69f1ca9c0ad8cf271ed407ad5bc68bd: registering service...
+2020-12->07 18:18:57.081  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:18:57.090  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:f69f1ca9c0ad8cf271ed407ad5bc68bd - registration status: 204
+2020-12->07 18:18:57.090  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2020-12->07 18:18:57.099  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 5000 (http) with context path ''
+2020-12->07 18:18:57.099  INFO Poulamis-MacBook-Pro.local --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 5000
+2020-12->07 18:18:57.101  INFO Poulamis-MacBook-Pro.local --- [           main] c.i.e.a.AccountServiceApplication        : Started AccountServiceApplication in 7.552 seconds (JVM running for 8.361)
+2020-12->07 18:19:07.520 ERROR Poulamis-MacBook-Pro.local --- [nio-5000-exec-1] c.i.e.a.u.LoggingAspect                  : The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:367)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:255)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:527)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:153)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy163.findById(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy163.findById(Unknown Source)
+	at com.infosys.ekart.account.serviceImpl.UserServiceImpl.addNewUser(UserServiceImpl.java:38)
+	at com.infosys.ekart.account.serviceImpl.UserServiceImpl$$FastClassBySpringCGLIB$$ac2c8363.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.infosys.ekart.account.serviceImpl.UserServiceImpl$$EnhancerBySpringCGLIB$$c510592c.addNewUser(<generated>)
+	at com.infosys.ekart.account.api.AccountAPI.addNewUser(AccountAPI.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:154)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:122)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.IllegalArgumentException: The given id must not be null!
+	at org.springframework.util.Assert.notNull(Assert.java:198)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:222)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:359)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:644)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:608)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$invoke$3(RepositoryFactorySupport.java:595)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:595)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	... 106 more
+2020-12->07 18:22:45.352  INFO Poulamis-MacBook-Pro.local --- [on(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12->07 18:22:45.354  INFO Poulamis-MacBook-Pro.local --- [on(7)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ACCOUNTMS with eureka with status DOWN
+2020-12->07 18:22:45.355  WARN Poulamis-MacBook-Pro.local --- [on(7)-127.0.0.1] c.n.d.DiscoveryClient                    : Saw local status change event StatusChangeEvent [timestamp=1607345565355, current=DOWN, previous=UP]
+2020-12->07 18:22:45.355  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:f69f1ca9c0ad8cf271ed407ad5bc68bd: registering service...
+2020-12->07 18:22:45.362  INFO Poulamis-MacBook-Pro.local --- [on(7)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12->07 18:22:45.364  INFO Poulamis-MacBook-Pro.local --- [on(7)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12->07 18:22:45.384  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:f69f1ca9c0ad8cf271ed407ad5bc68bd - registration status: 204
+2020-12->07 18:22:45.717  WARN Poulamis-MacBook-Pro.local --- [Sender@ab2009f}] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eurekaRibbonClientConfiguration': Unsatisfied dependency expressed through field 'eurekaConfig'; nested exception is org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2020-12->07 18:22:45.721  INFO Poulamis-MacBook-Pro.local --- [on(7)-127.0.0.1] c.n.d.DiscoveryClient                    : Shutting down DiscoveryClient ...
+2020-12->07 18:22:48.722  INFO Poulamis-MacBook-Pro.local --- [on(7)-127.0.0.1] c.n.d.DiscoveryClient                    : Unregistering ...
+2020-12->07 18:22:48.733  INFO Poulamis-MacBook-Pro.local --- [on(7)-127.0.0.1] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:f69f1ca9c0ad8cf271ed407ad5bc68bd - deregister  status: 200
+2020-12->07 18:22:48.859  INFO Poulamis-MacBook-Pro.local --- [on(7)-127.0.0.1] c.n.d.DiscoveryClient                    : Completed shut down of DiscoveryClient
+2020-12->07 18:22:48.859  INFO Poulamis-MacBook-Pro.local --- [on(7)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-12->07 18:22:48.867  INFO Poulamis-MacBook-Pro.local --- [on(7)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-12->07 18:22:48.868  INFO Poulamis-MacBook-Pro.local --- [on(7)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:22:48.923  INFO Poulamis-MacBook-Pro.local --- [on(7)-127.0.0.1] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2020-12->07 18:22:48.925  INFO Poulamis-MacBook-Pro.local --- [on(7)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-12->07 18:22:48.928  INFO Poulamis-MacBook-Pro.local --- [on(7)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:22:48.932  INFO Poulamis-MacBook-Pro.local --- [on(7)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:22:52.265  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$68a371e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12->07 18:22:52.369  INFO Poulamis-MacBook-Pro.local --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:1111
+2020-12->07 18:22:53.275  INFO Poulamis-MacBook-Pro.local --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=AccountMS, profiles=[default], label=null, version=57cae71bf93f480f3c97bd165243c6ee626aa525, state=null
+2020-12->07 18:22:53.275  INFO Poulamis-MacBook-Pro.local --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/Poulami-Sarkar/ekart-config//AccountMS.properties'}, MapPropertySource {name='https://github.com/Poulami-Sarkar/ekart-config//application.properties'}]}
+2020-12->07 18:22:53.318  INFO Poulamis-MacBook-Pro.local --- [           main] c.i.e.a.AccountServiceApplication        : No active profile set, falling back to default profiles: default
+2020-12->07 18:22:53.883  INFO Poulamis-MacBook-Pro.local --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12->07 18:22:54.002  INFO Poulamis-MacBook-Pro.local --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106ms. Found 1 repository interfaces.
+2020-12->07 18:22:54.130  WARN Poulamis-MacBook-Pro.local --- [           main] o.s.b.a.e.EndpointId                     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-12->07 18:22:54.528  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=73281aa8-eef8-3c59-9e4c-c924078eafc5
+2020-12->07 18:22:54.753  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4c896ee3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12->07 18:22:54.789  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$68a371e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12->07 18:22:55.125  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 5000 (http)
+2020-12->07 18:22:55.134  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:22:55.139  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-12->07 18:22:55.140  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/9.0.12
+2020-12->07 18:22:55.148  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/poulamisarkar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-12->07 18:22:55.259  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-12->07 18:22:55.259  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1931 ms
+2020-12->07 18:22:55.402  WARN Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2020-12->07 18:22:55.402  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12->07 18:22:55.416  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.DynamicPropertyFactory             : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@75d539b9
+2020-12->07 18:22:56.305  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-12->07 18:22:56.305  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-12->07 18:22:56.305  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'tracingFilter' to: [/*]
+2020-12->07 18:22:56.305  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-12->07 18:22:56.306  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-12->07 18:22:56.306  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'formContentFilter' to: [/*]
+2020-12->07 18:22:56.306  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2020-12->07 18:22:56.306  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpTraceFilter' to: [/*]
+2020-12->07 18:22:56.306  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2020-12->07 18:22:56.405  INFO Poulamis-MacBook-Pro.local --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12->07 18:22:56.408  WARN Poulamis-MacBook-Pro.local --- [           main] c.z.h.u.DriverDataSource                 : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-12->07 18:22:56.665  INFO Poulamis-MacBook-Pro.local --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12->07 18:22:56.708  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12->07 18:22:56.758  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.3.7.Final}
+2020-12->07 18:22:56.759  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2020-12->07 18:22:56.879  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-12->07 18:22:57.006  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-12->07 18:22:57.455  INFO Poulamis-MacBook-Pro.local --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12->07 18:22:57.810  WARN Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2020-12->07 18:22:57.810  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12->07 18:22:58.153  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12->07 18:22:58.220  WARN Poulamis-MacBook-Pro.local --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12->07 18:22:58.897  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-12->07 18:22:58.993  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.n.e.InstanceInfoFactory            : Setting initial instance status as: STARTING
+2020-12->07 18:22:59.036  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Initializing Eureka in region us-east-1
+2020-12->07 18:22:59.100  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using JSON encoding codec LegacyJacksonJson
+2020-12->07 18:22:59.101  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using JSON decoding codec LegacyJacksonJson
+2020-12->07 18:22:59.234  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using XML encoding codec XStreamXml
+2020-12->07 18:22:59.234  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using XML decoding codec XStreamXml
+2020-12->07 18:22:59.440  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 18:22:59.464  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Disable delta property : false
+2020-12->07 18:22:59.464  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Single vip registry refresh property : null
+2020-12->07 18:22:59.464  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Force full registry fetch : false
+2020-12->07 18:22:59.465  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Application is null : false
+2020-12->07 18:22:59.465  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Registered Applications size is zero : true
+2020-12->07 18:22:59.465  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Application version is -1: true
+2020-12->07 18:22:59.465  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Getting all instance registry info from the eureka server
+2020-12->07 18:22:59.564  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : The response status is 200
+2020-12->07 18:22:59.569  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Starting heartbeat executor: renew interval is: 30
+2020-12->07 18:22:59.574  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.InstanceInfoReplicator             : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12->07 18:22:59.583  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Discovery Client initialized at timestamp 1607345579582 with initial instances count: 1
+2020-12->07 18:22:59.592  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ACCOUNTMS with eureka with status UP
+2020-12->07 18:22:59.592  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Saw local status change event StatusChangeEvent [timestamp=1607345579592, current=UP, previous=STARTING]
+2020-12->07 18:22:59.593  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:f2d0296012aa063d5bda4f5ae3ce0c2f: registering service...
+2020-12->07 18:22:59.612  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:f2d0296012aa063d5bda4f5ae3ce0c2f - registration status: 204
+2020-12->07 18:22:59.614  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:22:59.623  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2020-12->07 18:22:59.633  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 5000 (http) with context path ''
+2020-12->07 18:22:59.633  INFO Poulamis-MacBook-Pro.local --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 5000
+2020-12->07 18:22:59.635  INFO Poulamis-MacBook-Pro.local --- [           main] c.i.e.a.AccountServiceApplication        : Started AccountServiceApplication in 7.717 seconds (JVM running for 8.521)
+2020-12->07 18:23:00.042  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12->07 18:23:00.043  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-12->07 18:23:00.057  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Completed initialization in 14 ms
+2020-12->07 18:24:31.080  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12->07 18:24:31.081  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ACCOUNTMS with eureka with status DOWN
+2020-12->07 18:24:31.081  WARN Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] c.n.d.DiscoveryClient                    : Saw local status change event StatusChangeEvent [timestamp=1607345671081, current=DOWN, previous=UP]
+2020-12->07 18:24:31.081  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:f2d0296012aa063d5bda4f5ae3ce0c2f: registering service...
+2020-12->07 18:24:31.084  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12->07 18:24:31.085  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:f2d0296012aa063d5bda4f5ae3ce0c2f - registration status: 204
+2020-12->07 18:24:31.086  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12->07 18:24:31.824  WARN Poulamis-MacBook-Pro.local --- [ender@48692405}] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eurekaRibbonClientConfiguration': Unsatisfied dependency expressed through field 'eurekaConfig'; nested exception is org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2020-12->07 18:24:31.826  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] c.n.d.DiscoveryClient                    : Shutting down DiscoveryClient ...
+2020-12->07 18:24:34.828  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] c.n.d.DiscoveryClient                    : Unregistering ...
+2020-12->07 18:24:34.836  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:f2d0296012aa063d5bda4f5ae3ce0c2f - deregister  status: 200
+2020-12->07 18:24:34.949  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] c.n.d.DiscoveryClient                    : Completed shut down of DiscoveryClient
+2020-12->07 18:24:34.949  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-12->07 18:24:34.957  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-12->07 18:24:34.957  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:24:35.013  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2020-12->07 18:24:35.015  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-12->07 18:24:35.020  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:24:35.025  INFO Poulamis-MacBook-Pro.local --- [on(6)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:24:38.814  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c18cfe8b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12->07 18:24:38.929  INFO Poulamis-MacBook-Pro.local --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:1111
+2020-12->07 18:24:39.803  INFO Poulamis-MacBook-Pro.local --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=AccountMS, profiles=[default], label=null, version=57cae71bf93f480f3c97bd165243c6ee626aa525, state=null
+2020-12->07 18:24:39.804  INFO Poulamis-MacBook-Pro.local --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/Poulami-Sarkar/ekart-config//AccountMS.properties'}, MapPropertySource {name='https://github.com/Poulami-Sarkar/ekart-config//application.properties'}]}
+2020-12->07 18:24:39.841  INFO Poulamis-MacBook-Pro.local --- [           main] c.i.e.a.AccountServiceApplication        : No active profile set, falling back to default profiles: default
+2020-12->07 18:24:40.371  INFO Poulamis-MacBook-Pro.local --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12->07 18:24:40.418  INFO Poulamis-MacBook-Pro.local --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43ms. Found 1 repository interfaces.
+2020-12->07 18:24:40.488  WARN Poulamis-MacBook-Pro.local --- [           main] o.s.b.a.e.EndpointId                     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-12->07 18:24:40.733  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=73281aa8-eef8-3c59-9e4c-c924078eafc5
+2020-12->07 18:24:40.922  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a572fb8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12->07 18:24:40.957  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c18cfe8b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12->07 18:24:41.325  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 5000 (http)
+2020-12->07 18:24:41.335  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:24:41.341  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-12->07 18:24:41.341  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/9.0.12
+2020-12->07 18:24:41.350  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/poulamisarkar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-12->07 18:24:41.471  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-12->07 18:24:41.471  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1620 ms
+2020-12->07 18:24:41.630  WARN Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2020-12->07 18:24:41.630  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12->07 18:24:41.645  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.DynamicPropertyFactory             : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@31533eb1
+2020-12->07 18:24:42.743  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-12->07 18:24:42.744  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-12->07 18:24:42.744  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'tracingFilter' to: [/*]
+2020-12->07 18:24:42.744  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-12->07 18:24:42.745  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-12->07 18:24:42.745  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'formContentFilter' to: [/*]
+2020-12->07 18:24:42.745  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2020-12->07 18:24:42.745  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpTraceFilter' to: [/*]
+2020-12->07 18:24:42.746  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2020-12->07 18:24:42.882  INFO Poulamis-MacBook-Pro.local --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12->07 18:24:42.897  WARN Poulamis-MacBook-Pro.local --- [           main] c.z.h.u.DriverDataSource                 : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-12->07 18:24:43.246  INFO Poulamis-MacBook-Pro.local --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12->07 18:24:43.287  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12->07 18:24:43.336  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.3.7.Final}
+2020-12->07 18:24:43.337  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2020-12->07 18:24:43.444  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-12->07 18:24:43.574  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-12->07 18:24:44.025  INFO Poulamis-MacBook-Pro.local --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12->07 18:24:44.400  WARN Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2020-12->07 18:24:44.400  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12->07 18:24:44.829  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12->07 18:24:44.918  WARN Poulamis-MacBook-Pro.local --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12->07 18:24:45.746  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-12->07 18:24:45.779  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12->07 18:24:45.780  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-12->07 18:24:45.796  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Completed initialization in 16 ms
+2020-12->07 18:24:45.856  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.n.e.InstanceInfoFactory            : Setting initial instance status as: STARTING
+2020-12->07 18:24:45.908  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Initializing Eureka in region us-east-1
+2020-12->07 18:24:45.969  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using JSON encoding codec LegacyJacksonJson
+2020-12->07 18:24:45.969  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using JSON decoding codec LegacyJacksonJson
+2020-12->07 18:24:46.120  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using XML encoding codec XStreamXml
+2020-12->07 18:24:46.120  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using XML decoding codec XStreamXml
+2020-12->07 18:24:46.348  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 18:24:46.391  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Disable delta property : false
+2020-12->07 18:24:46.391  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Single vip registry refresh property : null
+2020-12->07 18:24:46.391  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Force full registry fetch : false
+2020-12->07 18:24:46.391  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Application is null : false
+2020-12->07 18:24:46.392  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Registered Applications size is zero : true
+2020-12->07 18:24:46.392  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Application version is -1: true
+2020-12->07 18:24:46.392  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Getting all instance registry info from the eureka server
+2020-12->07 18:24:46.494  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : The response status is 200
+2020-12->07 18:24:46.499  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Starting heartbeat executor: renew interval is: 30
+2020-12->07 18:24:46.504  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.InstanceInfoReplicator             : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12->07 18:24:46.512  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Discovery Client initialized at timestamp 1607345686512 with initial instances count: 1
+2020-12->07 18:24:46.523  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ACCOUNTMS with eureka with status UP
+2020-12->07 18:24:46.524  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Saw local status change event StatusChangeEvent [timestamp=1607345686524, current=UP, previous=STARTING]
+2020-12->07 18:24:46.526  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:94bd84fc8b17b90f25d771d4323035e7: registering service...
+2020-12->07 18:24:46.539  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:24:46.546  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:94bd84fc8b17b90f25d771d4323035e7 - registration status: 204
+2020-12->07 18:24:46.551  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2020-12->07 18:24:46.560  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 5000 (http) with context path ''
+2020-12->07 18:24:46.561  INFO Poulamis-MacBook-Pro.local --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 5000
+2020-12->07 18:24:46.562  INFO Poulamis-MacBook-Pro.local --- [           main] c.i.e.a.AccountServiceApplication        : Started AccountServiceApplication in 8.144 seconds (JVM running for 9.008)
+2020-12->07 18:24:47.039 ERROR Poulamis-MacBook-Pro.local --- [nio-5000-exec-1] c.i.e.a.u.LoggingAspect                  : The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:367)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:255)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:527)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:153)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy163.findById(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy163.findById(Unknown Source)
+	at com.infosys.ekart.account.serviceImpl.UserServiceImpl.addNewUser(UserServiceImpl.java:38)
+	at com.infosys.ekart.account.serviceImpl.UserServiceImpl$$FastClassBySpringCGLIB$$ac2c8363.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.infosys.ekart.account.serviceImpl.UserServiceImpl$$EnhancerBySpringCGLIB$$cb6f3bc9.addNewUser(<generated>)
+	at com.infosys.ekart.account.api.AccountAPI.addNewUser(AccountAPI.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:154)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:122)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.IllegalArgumentException: The given id must not be null!
+	at org.springframework.util.Assert.notNull(Assert.java:198)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:222)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:359)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:644)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:608)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$invoke$3(RepositoryFactorySupport.java:595)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:595)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	... 106 more
+2020-12->07 18:28:21.147  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12->07 18:28:21.149  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ACCOUNTMS with eureka with status DOWN
+2020-12->07 18:28:21.149  WARN Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] c.n.d.DiscoveryClient                    : Saw local status change event StatusChangeEvent [timestamp=1607345901149, current=DOWN, previous=UP]
+2020-12->07 18:28:21.149  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:94bd84fc8b17b90f25d771d4323035e7: registering service...
+2020-12->07 18:28:21.152  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12->07 18:28:21.154  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12->07 18:28:21.157  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:94bd84fc8b17b90f25d771d4323035e7 - registration status: 204
+2020-12->07 18:28:21.321  WARN Poulamis-MacBook-Pro.local --- [Sender@f5ae29e}] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eurekaRibbonClientConfiguration': Unsatisfied dependency expressed through field 'eurekaConfig'; nested exception is org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2020-12->07 18:28:21.323  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] c.n.d.DiscoveryClient                    : Shutting down DiscoveryClient ...
+2020-12->07 18:28:24.327  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] c.n.d.DiscoveryClient                    : Unregistering ...
+2020-12->07 18:28:24.334  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:94bd84fc8b17b90f25d771d4323035e7 - deregister  status: 200
+2020-12->07 18:28:24.463  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] c.n.d.DiscoveryClient                    : Completed shut down of DiscoveryClient
+2020-12->07 18:28:24.463  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-12->07 18:28:24.471  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-12->07 18:28:24.472  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:28:24.525  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2020-12->07 18:28:24.526  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-12->07 18:28:24.529  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:28:24.532  INFO Poulamis-MacBook-Pro.local --- [on(8)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:28:28.844  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$83606626] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12->07 18:28:29.008  INFO Poulamis-MacBook-Pro.local --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:1111
+2020-12->07 18:28:30.022  INFO Poulamis-MacBook-Pro.local --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=AccountMS, profiles=[default], label=null, version=57cae71bf93f480f3c97bd165243c6ee626aa525, state=null
+2020-12->07 18:28:30.022  INFO Poulamis-MacBook-Pro.local --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/Poulami-Sarkar/ekart-config//AccountMS.properties'}, MapPropertySource {name='https://github.com/Poulami-Sarkar/ekart-config//application.properties'}]}
+2020-12->07 18:28:30.056  INFO Poulamis-MacBook-Pro.local --- [           main] c.i.e.a.AccountServiceApplication        : No active profile set, falling back to default profiles: default
+2020-12->07 18:28:30.547  INFO Poulamis-MacBook-Pro.local --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12->07 18:28:30.606  INFO Poulamis-MacBook-Pro.local --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54ms. Found 1 repository interfaces.
+2020-12->07 18:28:30.686  WARN Poulamis-MacBook-Pro.local --- [           main] o.s.b.a.e.EndpointId                     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-12->07 18:28:30.953  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=73281aa8-eef8-3c59-9e4c-c924078eafc5
+2020-12->07 18:28:31.159  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67466329] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12->07 18:28:31.195  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$83606626] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12->07 18:28:31.543  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 5000 (http)
+2020-12->07 18:28:31.553  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:28:31.559  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-12->07 18:28:31.560  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/9.0.12
+2020-12->07 18:28:31.568  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/poulamisarkar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-12->07 18:28:31.691  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-12->07 18:28:31.692  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1629 ms
+2020-12->07 18:28:31.836  WARN Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2020-12->07 18:28:31.836  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12->07 18:28:31.850  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.DynamicPropertyFactory             : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1a819901
+2020-12->07 18:28:32.762  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-12->07 18:28:32.762  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-12->07 18:28:32.762  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'tracingFilter' to: [/*]
+2020-12->07 18:28:32.762  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-12->07 18:28:32.763  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-12->07 18:28:32.763  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'formContentFilter' to: [/*]
+2020-12->07 18:28:32.763  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2020-12->07 18:28:32.763  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpTraceFilter' to: [/*]
+2020-12->07 18:28:32.763  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2020-12->07 18:28:32.882  INFO Poulamis-MacBook-Pro.local --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12->07 18:28:32.887  WARN Poulamis-MacBook-Pro.local --- [           main] c.z.h.u.DriverDataSource                 : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-12->07 18:28:33.202  INFO Poulamis-MacBook-Pro.local --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12->07 18:28:33.249  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12->07 18:28:33.302  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.3.7.Final}
+2020-12->07 18:28:33.303  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2020-12->07 18:28:33.421  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-12->07 18:28:33.527  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-12->07 18:28:33.979  INFO Poulamis-MacBook-Pro.local --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12->07 18:28:34.319  WARN Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2020-12->07 18:28:34.320  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12->07 18:28:34.658  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12->07 18:28:34.720  WARN Poulamis-MacBook-Pro.local --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12->07 18:28:35.545  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-12->07 18:28:35.658  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.n.e.InstanceInfoFactory            : Setting initial instance status as: STARTING
+2020-12->07 18:28:35.705  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Initializing Eureka in region us-east-1
+2020-12->07 18:28:35.767  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using JSON encoding codec LegacyJacksonJson
+2020-12->07 18:28:35.768  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using JSON decoding codec LegacyJacksonJson
+2020-12->07 18:28:36.070  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using XML encoding codec XStreamXml
+2020-12->07 18:28:36.070  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using XML decoding codec XStreamXml
+2020-12->07 18:28:36.322  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12->07 18:28:36.358  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Disable delta property : false
+2020-12->07 18:28:36.359  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Single vip registry refresh property : null
+2020-12->07 18:28:36.359  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Force full registry fetch : false
+2020-12->07 18:28:36.359  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Application is null : false
+2020-12->07 18:28:36.359  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Registered Applications size is zero : true
+2020-12->07 18:28:36.359  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Application version is -1: true
+2020-12->07 18:28:36.359  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Getting all instance registry info from the eureka server
+2020-12->07 18:28:36.422  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12->07 18:28:36.422  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-12->07 18:28:36.439  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Completed initialization in 17 ms
+2020-12->07 18:28:36.455  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : The response status is 200
+2020-12->07 18:28:36.459  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Starting heartbeat executor: renew interval is: 30
+2020-12->07 18:28:36.465  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.InstanceInfoReplicator             : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12->07 18:28:36.477  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Discovery Client initialized at timestamp 1607345916476 with initial instances count: 0
+2020-12->07 18:28:36.491  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ACCOUNTMS with eureka with status UP
+2020-12->07 18:28:36.491  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Saw local status change event StatusChangeEvent [timestamp=1607345916491, current=UP, previous=STARTING]
+2020-12->07 18:28:36.493  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:25cbfd37fa04d16662c2ddd92ba70984: registering service...
+2020-12->07 18:28:36.501  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-5000"]
+2020-12->07 18:28:36.511  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ACCOUNTMS/192.168.1.8:AccountMS:25cbfd37fa04d16662c2ddd92ba70984 - registration status: 204
+2020-12->07 18:28:36.512  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2020-12->07 18:28:36.522  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 5000 (http) with context path ''
+2020-12->07 18:28:36.523  INFO Poulamis-MacBook-Pro.local --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 5000
+2020-12->07 18:28:36.526  INFO Poulamis-MacBook-Pro.local --- [           main] c.i.e.a.AccountServiceApplication        : Started AccountServiceApplication in 8.183 seconds (JVM running for 9.085)
+2020-12->07 18:29:06.461  INFO Poulamis-MacBook-Pro.local --- [freshExecutor-0] c.n.d.DiscoveryClient                    : Disable delta property : false
+2020-12->07 18:29:06.461  INFO Poulamis-MacBook-Pro.local --- [freshExecutor-0] c.n.d.DiscoveryClient                    : Single vip registry refresh property : null
+2020-12->07 18:29:06.461  INFO Poulamis-MacBook-Pro.local --- [freshExecutor-0] c.n.d.DiscoveryClient                    : Force full registry fetch : false
+2020-12->07 18:29:06.461  INFO Poulamis-MacBook-Pro.local --- [freshExecutor-0] c.n.d.DiscoveryClient                    : Application is null : false
+2020-12->07 18:29:06.462  INFO Poulamis-MacBook-Pro.local --- [freshExecutor-0] c.n.d.DiscoveryClient                    : Registered Applications size is zero : true
+2020-12->07 18:29:06.462  INFO Poulamis-MacBook-Pro.local --- [freshExecutor-0] c.n.d.DiscoveryClient                    : Application version is -1: false
+2020-12->07 18:29:06.462  INFO Poulamis-MacBook-Pro.local --- [freshExecutor-0] c.n.d.DiscoveryClient                    : Getting all instance registry info from the eureka server
+2020-12->07 18:29:06.482  INFO Poulamis-MacBook-Pro.local --- [freshExecutor-0] c.n.d.DiscoveryClient                    : The response status is 200
+2020-12->07 18:29:48.074  WARN Poulamis-MacBook-Pro.local --- [nio-5000-exec-3] o.s.w.s.PageNotFound                     : Request method 'POST' not supported
+2020-12->07 18:29:48.374  INFO Poulamis-MacBook-Pro.local --- [ender@210d3a42}] c.n.c.ChainedDynamicProperty             : Flipping property: localhost.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12->07 18:29:48.415  INFO Poulamis-MacBook-Pro.local --- [ender@210d3a42}] c.n.u.c.ShutdownEnabledTimer             : Shutdown hook installed for: NFLoadBalancer-PingTimer-localhost
+2020-12->07 18:29:48.416  INFO Poulamis-MacBook-Pro.local --- [ender@210d3a42}] c.n.l.BaseLoadBalancer                   : Client: localhost instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-12->07 18:29:48.427  INFO Poulamis-MacBook-Pro.local --- [ender@210d3a42}] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2020-12->07 18:29:48.429  INFO Poulamis-MacBook-Pro.local --- [ender@210d3a42}] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client localhost initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@49cc4c6e
