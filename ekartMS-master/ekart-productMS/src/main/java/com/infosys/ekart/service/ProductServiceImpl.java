@@ -1,5 +1,6 @@
 package com.infosys.ekart.service;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -16,6 +17,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import com.infosys.ekart.entity.CategoryRecommendationEntity;
+import com.infosys.ekart.entity.Deals;
 import com.infosys.ekart.entity.ProductEntity;
 import com.infosys.ekart.exception.ProductNameAlreadyPresent;
 import com.infosys.ekart.model.BaseResponse;
@@ -30,12 +32,15 @@ import com.infosys.ekart.model.ProductDetailsDTO;
 import com.infosys.ekart.model.RecommendationModel;
 import com.infosys.ekart.model.Reviews;
 import com.infosys.ekart.model.SellerDTO;
+import com.infosys.ekart.repository.DealsRepository;
 import com.infosys.ekart.repository.ProductRepository;
 import com.infosys.ekart.repository.RecommendationRepository;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
 @Service
 public class ProductServiceImpl implements ProductService {
+	@Autowired
+	DealsRepository dealsRepository;
 	@Autowired
 	ProductRepository productRepository;
 	@Autowired
@@ -51,25 +56,15 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public List<DealsModel> getDeals() {
-		List<ProductEntity> productList = productRepository.findAll();
-		List<DealsModel> dealsList = new ArrayList<DealsModel>();
-		Map<String, DealsModel> dealsMap = new HashMap<String, DealsModel>();
+		
+		 LocalDate now = LocalDate.now();  
 
-		for (ProductEntity product : productList) {
-			if (product.getDiscount() > 0) {
-				if (!dealsMap.containsKey(product.getDisplayName())
-						|| dealsMap.get(product.getDisplayName()).getDiscount() < product.getDiscount()) {
-					DealsModel dealsDTO = new DealsModel();
-					dealsDTO.setCategory(product.getCategory());
-					dealsDTO.setDisplayName(product.getDisplayName());
-					dealsDTO.setDiscount(product.getDiscount());
-					dealsDTO.setShortDesc(product.getShortDesc());
-					dealsMap.put(product.getDisplayName(), dealsDTO);
-				}
-			}
+		List<DealsModel> deals = new ArrayList<DealsModel>();
+		List<Deals> dealsEntity= dealsRepository.findDealsByDate(now);
+		for(Deals deal: dealsEntity) {
+			deals.add(DealsModel.valueOf(deal));
 		}
-		dealsList.addAll(dealsMap.values());
-		return dealsList;
+		return deals;
 	}
 
 	@Override
@@ -100,6 +95,7 @@ public class ProductServiceImpl implements ProductService {
 		return priceComparisonList;
 	}
 
+	/*
 	@Override
 	public List<RecommendationModel> getRecommendations(String userId) {
 		List<RecommendationModel> recommendationList = new ArrayList<>();
@@ -130,7 +126,7 @@ public class ProductServiceImpl implements ProductService {
 		recommendationList.addAll(recommendationMap.values());
 		return recommendationList;
 	}
-
+*/
 	// Ashish US34,35
 	public void addProduct(ProductDTO productDTO) throws ProductNameAlreadyPresent {
 		searchByProductNameAndSellerId(productDTO.getDisplayName(), productDTO.getSellerId());
