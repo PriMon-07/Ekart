@@ -68,6 +68,7 @@ public class AddressAPI {
 			return new ResponseEntity<String>(errors, HttpStatus.EXPECTATION_FAILED);
 		} else {
 			Boolean isAuthenticated = authenticationClient.authenticateUser(userid);
+			System.out.println(isAuthenticated);
 			if (!isAuthenticated) {
 				try {
 					throw new InvalidUserIdException(env.getProperty("INVALID_USER_ID"));

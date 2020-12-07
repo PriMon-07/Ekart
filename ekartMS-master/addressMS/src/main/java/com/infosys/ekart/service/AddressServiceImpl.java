@@ -62,7 +62,7 @@ public class AddressServiceImpl implements AddressService {
 
 	@Override
 	public boolean isValidUserId(String userId) {
-		return new RestTemplate().getForObject("http://UserMS/" + userId + "/checkuser", Boolean.class);
+		return new RestTemplate().getForObject("http://ACCOUNTMS/" + userId + "/checkuser", Boolean.class);
 		// "/validate", Boolean.class); //Need to confirm with Navaniet Sen
 		//return new RestTemplate().getForObject("https://ad7b32dc-f324-42e4-b5ed-f8d6e0bc5d16.mock.pstmn.io/1/validate",
 				//Boolean.class);
