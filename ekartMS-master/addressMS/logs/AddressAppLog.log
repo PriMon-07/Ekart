@@ -1554,3 +1554,410 @@ Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.
 ]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@476e3626
 2020-12-07 22:11:12.351  INFO Poulamis-MacBook-Pro.local --- [nio-5001-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
 2020-12-07 22:11:12.730  INFO Poulamis-MacBook-Pro.local --- [erListUpdater-0] c.n.c.ChainedDynamicProperty             : Flipping property: AccountMS.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-07 22:14:25.502  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-07 22:16:51.402  WARN Poulamis-MacBook-Pro.local --- [nio-5001-exec-2] o.s.w.s.PageNotFound                     : Request method 'PUT' not supported
+2020-12-07 22:17:06.068  WARN Poulamis-MacBook-Pro.local --- [nio-5001-exec-1] o.s.w.s.PageNotFound                     : Request method 'PUT' not supported
+2020-12-07 22:17:26.113  INFO Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12-07 22:17:26.113  INFO Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ADDRESSMS with eureka with status DOWN
+2020-12-07 22:17:26.114  WARN Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] c.n.d.DiscoveryClient                    : Saw local status change event StatusChangeEvent [timestamp=1607359646114, current=DOWN, previous=UP]
+2020-12-07 22:17:26.114  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ADDRESSMS/192.168.1.8:AddressMS:8d51659ffaf3f7276efae6997a3f3f96: registering service...
+2020-12-07 22:17:26.116  INFO Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-07 22:17:26.118  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ADDRESSMS/192.168.1.8:AddressMS:8d51659ffaf3f7276efae6997a3f3f96 - registration status: 204
+2020-12-07 22:17:26.118  INFO Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-07 22:17:26.626  INFO Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] c.n.u.c.ShutdownEnabledTimer             : Shutdown hook removed for: NFLoadBalancer-PingTimer-AccountMS
+2020-12-07 22:17:26.633  INFO Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] c.n.d.DiscoveryClient                    : Shutting down DiscoveryClient ...
+2020-12-07 22:17:29.636  INFO Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] c.n.d.DiscoveryClient                    : Unregistering ...
+2020-12-07 22:17:29.640  INFO Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] c.n.d.DiscoveryClient                    : DiscoveryClient_ADDRESSMS/192.168.1.8:AddressMS:8d51659ffaf3f7276efae6997a3f3f96 - deregister  status: 200
+2020-12-07 22:17:29.757  INFO Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] c.n.d.DiscoveryClient                    : Completed shut down of DiscoveryClient
+2020-12-07 22:17:29.757  INFO Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-12-07 22:17:29.764  INFO Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-12-07 22:17:29.765  INFO Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-5001"]
+2020-12-07 22:17:29.820  INFO Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2020-12-07 22:17:29.821  INFO Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-12-07 22:17:29.824  WARN Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] o.a.c.l.WebappClassLoaderBase            : The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2020-12-07 22:17:29.825  WARN Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] o.a.c.l.WebappClassLoaderBase            : The web application [ROOT] appears to have started a thread named [RxComputationScheduler-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2020-12-07 22:17:29.826  WARN Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] o.a.c.l.WebappClassLoaderBase            : The web application [ROOT] appears to have started a thread named [HystrixTimer-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@15.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2020-12-07 22:17:29.827  WARN Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] o.a.c.l.WebappClassLoaderBase            : The web application [ROOT] appears to have started a thread named [hystrix-AccountMS-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:211)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:920)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2020-12-07 22:17:29.827  WARN Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] o.a.c.l.WebappClassLoaderBase            : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2020-12-07 22:17:29.828  WARN Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] o.a.c.l.WebappClassLoaderBase            : The web application [ROOT] appears to have started a thread named [DataPublisher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2020-12-07 22:17:29.828  WARN Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] o.a.c.l.WebappClassLoaderBase            : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@15.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2020-12-07 22:17:29.829  WARN Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] o.a.c.l.WebappClassLoaderBase            : The web application [ROOT] appears to have started a thread named [HystrixTimer-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@15.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2020-12-07 22:17:29.830  WARN Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] o.a.c.l.WebappClassLoaderBase            : The web application [ROOT] appears to have started a thread named [hystrix-AccountMS-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:211)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:920)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2020-12-07 22:17:29.830  WARN Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] o.a.c.l.WebappClassLoaderBase            : The web application [ROOT] appears to have started a thread named [HystrixTimer-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@15.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2020-12-07 22:17:29.831  WARN Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] o.a.c.l.WebappClassLoaderBase            : The web application [ROOT] appears to have started a thread named [hystrix-AccountMS-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:211)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:920)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2020-12-07 22:17:29.833  INFO Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-5001"]
+2020-12-07 22:17:29.836  INFO Poulamis-MacBook-Pro.local --- [n(12)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-5001"]
+2020-12-07 22:17:29.836  INFO Poulamis-MacBook-Pro.local --- [      Thread-11] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
+2020-12-07 22:17:33.729  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8593ae6e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-07 22:17:33.856  INFO Poulamis-MacBook-Pro.local --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:1111
+2020-12-07 22:17:34.941  INFO Poulamis-MacBook-Pro.local --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=AddressMS, profiles=[default], label=null, version=8d9a3edbe65afaff83e40a1ca629a19f41ad630f, state=null
+2020-12-07 22:17:34.941  INFO Poulamis-MacBook-Pro.local --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/Poulami-Sarkar/ekart-config//AddressMS.properties'}, MapPropertySource {name='https://github.com/Poulami-Sarkar/ekart-config//application.properties'}]}
+2020-12-07 22:17:34.979  INFO Poulamis-MacBook-Pro.local --- [           main] c.i.e.EkartAddressMsApplication          : No active profile set, falling back to default profiles: default
+2020-12-07 22:17:35.525  INFO Poulamis-MacBook-Pro.local --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-07 22:17:35.576  INFO Poulamis-MacBook-Pro.local --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46ms. Found 1 repository interfaces.
+2020-12-07 22:17:35.660  WARN Poulamis-MacBook-Pro.local --- [           main] o.s.b.a.e.EndpointId                     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-12-07 22:17:35.963  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=27b2a1b7-024f-321e-9596-f88b08d35ca4
+2020-12-07 22:17:36.200  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6979ab71] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-07 22:17:36.245  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8593ae6e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-07 22:17:36.623  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 5001 (http)
+2020-12-07 22:17:36.634  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-5001"]
+2020-12-07 22:17:36.639  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-12-07 22:17:36.640  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/9.0.12
+2020-12-07 22:17:36.648  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/poulamisarkar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-12-07 22:17:36.797  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-12-07 22:17:36.797  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1806 ms
+2020-12-07 22:17:36.945  WARN Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2020-12-07 22:17:36.946  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-07 22:17:36.960  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.DynamicPropertyFactory             : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@a6dffdb
+2020-12-07 22:17:37.889  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-12-07 22:17:37.889  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-12-07 22:17:37.889  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'tracingFilter' to: [/*]
+2020-12-07 22:17:37.890  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-12-07 22:17:37.890  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-12-07 22:17:37.890  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'formContentFilter' to: [/*]
+2020-12-07 22:17:37.890  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2020-12-07 22:17:37.890  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpTraceFilter' to: [/*]
+2020-12-07 22:17:37.890  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2020-12-07 22:17:37.989  INFO Poulamis-MacBook-Pro.local --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12-07 22:17:37.993  WARN Poulamis-MacBook-Pro.local --- [           main] c.z.h.u.DriverDataSource                 : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-12-07 22:17:38.256  INFO Poulamis-MacBook-Pro.local --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12-07 22:17:38.298  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12-07 22:17:38.358  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.3.7.Final}
+2020-12-07 22:17:38.359  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2020-12-07 22:17:38.480  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-12-07 22:17:38.594  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-12-07 22:17:39.079  INFO Poulamis-MacBook-Pro.local --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-07 22:17:39.722  WARN Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2020-12-07 22:17:39.722  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-07 22:17:40.015  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-07 22:17:40.085  WARN Poulamis-MacBook-Pro.local --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-07 22:17:40.799  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-12-07 22:17:40.907  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.n.e.InstanceInfoFactory            : Setting initial instance status as: STARTING
+2020-12-07 22:17:40.955  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Initializing Eureka in region us-east-1
+2020-12-07 22:17:41.011  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using JSON encoding codec LegacyJacksonJson
+2020-12-07 22:17:41.011  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using JSON decoding codec LegacyJacksonJson
+2020-12-07 22:17:41.155  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using XML encoding codec XStreamXml
+2020-12-07 22:17:41.155  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using XML decoding codec XStreamXml
+2020-12-07 22:17:41.372  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-07 22:17:41.392  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Disable delta property : false
+2020-12-07 22:17:41.392  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Single vip registry refresh property : null
+2020-12-07 22:17:41.392  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Force full registry fetch : false
+2020-12-07 22:17:41.392  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Application is null : false
+2020-12-07 22:17:41.393  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Registered Applications size is zero : true
+2020-12-07 22:17:41.393  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Application version is -1: true
+2020-12-07 22:17:41.393  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Getting all instance registry info from the eureka server
+2020-12-07 22:17:41.506  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : The response status is 200
+2020-12-07 22:17:41.514  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Starting heartbeat executor: renew interval is: 30
+2020-12-07 22:17:41.519  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.InstanceInfoReplicator             : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-07 22:17:41.528  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Discovery Client initialized at timestamp 1607359661528 with initial instances count: 1
+2020-12-07 22:17:41.538  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADDRESSMS with eureka with status UP
+2020-12-07 22:17:41.538  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Saw local status change event StatusChangeEvent [timestamp=1607359661538, current=UP, previous=STARTING]
+2020-12-07 22:17:41.539  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ADDRESSMS/192.168.1.8:AddressMS:98844e527f944043d052514be98433c6: registering service...
+2020-12-07 22:17:41.559  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ADDRESSMS/192.168.1.8:AddressMS:98844e527f944043d052514be98433c6 - registration status: 204
+2020-12-07 22:17:41.562  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-5001"]
+2020-12-07 22:17:41.572  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2020-12-07 22:17:41.586  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 5001 (http) with context path ''
+2020-12-07 22:17:41.587  INFO Poulamis-MacBook-Pro.local --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 5001
+2020-12-07 22:17:41.591  INFO Poulamis-MacBook-Pro.local --- [           main] c.i.e.EkartAddressMsApplication          : Started EkartAddressMsApplication in 8.301 seconds (JVM running for 9.387)
+2020-12-07 22:17:42.867  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-07 22:17:42.867  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-12-07 22:17:42.883  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Completed initialization in 16 ms
+2020-12-07 22:17:47.853  INFO Poulamis-MacBook-Pro.local --- [rix-AccountMS-1] c.n.c.ChainedDynamicProperty             : Flipping property: AccountMS.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-07 22:17:47.893  INFO Poulamis-MacBook-Pro.local --- [rix-AccountMS-1] c.n.u.c.ShutdownEnabledTimer             : Shutdown hook installed for: NFLoadBalancer-PingTimer-AccountMS
+2020-12-07 22:17:47.911  INFO Poulamis-MacBook-Pro.local --- [rix-AccountMS-1] c.n.l.BaseLoadBalancer                   : Client: AccountMS instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=AccountMS,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-12-07 22:17:47.925  INFO Poulamis-MacBook-Pro.local --- [rix-AccountMS-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2020-12-07 22:17:47.967  INFO Poulamis-MacBook-Pro.local --- [rix-AccountMS-1] c.n.c.ChainedDynamicProperty             : Flipping property: AccountMS.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-07 22:17:47.973  INFO Poulamis-MacBook-Pro.local --- [rix-AccountMS-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client AccountMS initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=AccountMS,current list of Servers=[192.168.1.8:5000],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.8:5000;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 05:30:00 IST 1970;	First connection made: Thu Jan 01 05:30:00 IST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@5cfa813e
+2020-12-07 22:17:48.119  INFO Poulamis-MacBook-Pro.local --- [nio-5001-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-12-07 22:17:48.946  INFO Poulamis-MacBook-Pro.local --- [erListUpdater-0] c.n.c.ChainedDynamicProperty             : Flipping property: AccountMS.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-07 22:18:28.961  INFO Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12-07 22:18:28.962  INFO Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ADDRESSMS with eureka with status DOWN
+2020-12-07 22:18:28.962  WARN Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] c.n.d.DiscoveryClient                    : Saw local status change event StatusChangeEvent [timestamp=1607359708962, current=DOWN, previous=UP]
+2020-12-07 22:18:28.962  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ADDRESSMS/192.168.1.8:AddressMS:98844e527f944043d052514be98433c6: registering service...
+2020-12-07 22:18:28.965  INFO Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-07 22:18:28.967  INFO Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-07 22:18:28.968  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ADDRESSMS/192.168.1.8:AddressMS:98844e527f944043d052514be98433c6 - registration status: 204
+2020-12-07 22:18:29.271  INFO Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] c.n.u.c.ShutdownEnabledTimer             : Shutdown hook removed for: NFLoadBalancer-PingTimer-AccountMS
+2020-12-07 22:18:29.279  INFO Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] c.n.d.DiscoveryClient                    : Shutting down DiscoveryClient ...
+2020-12-07 22:18:32.284  INFO Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] c.n.d.DiscoveryClient                    : Unregistering ...
+2020-12-07 22:18:32.290  INFO Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] c.n.d.DiscoveryClient                    : DiscoveryClient_ADDRESSMS/192.168.1.8:AddressMS:98844e527f944043d052514be98433c6 - deregister  status: 200
+2020-12-07 22:18:32.415  INFO Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] c.n.d.DiscoveryClient                    : Completed shut down of DiscoveryClient
+2020-12-07 22:18:32.415  INFO Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-12-07 22:18:32.422  INFO Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-12-07 22:18:32.422  INFO Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-5001"]
+2020-12-07 22:18:32.479  INFO Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2020-12-07 22:18:32.480  INFO Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-12-07 22:18:32.482  WARN Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] o.a.c.l.WebappClassLoaderBase            : The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2020-12-07 22:18:32.483  WARN Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] o.a.c.l.WebappClassLoaderBase            : The web application [ROOT] appears to have started a thread named [RxComputationScheduler-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2020-12-07 22:18:32.484  WARN Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] o.a.c.l.WebappClassLoaderBase            : The web application [ROOT] appears to have started a thread named [HystrixTimer-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@15.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2020-12-07 22:18:32.484  WARN Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] o.a.c.l.WebappClassLoaderBase            : The web application [ROOT] appears to have started a thread named [hystrix-AccountMS-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:211)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:920)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2020-12-07 22:18:32.485  WARN Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] o.a.c.l.WebappClassLoaderBase            : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2020-12-07 22:18:32.485  WARN Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] o.a.c.l.WebappClassLoaderBase            : The web application [ROOT] appears to have started a thread named [DataPublisher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2020-12-07 22:18:32.486  WARN Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] o.a.c.l.WebappClassLoaderBase            : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@15.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2020-12-07 22:18:32.488  INFO Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-5001"]
+2020-12-07 22:18:32.491  INFO Poulamis-MacBook-Pro.local --- [      Thread-11] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
+2020-12-07 22:18:32.491  INFO Poulamis-MacBook-Pro.local --- [on(4)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-5001"]
+2020-12-07 22:18:36.201  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$21dadc85] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-07 22:18:36.330  INFO Poulamis-MacBook-Pro.local --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:1111
+2020-12-07 22:18:37.376  INFO Poulamis-MacBook-Pro.local --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=AddressMS, profiles=[default], label=null, version=8d9a3edbe65afaff83e40a1ca629a19f41ad630f, state=null
+2020-12-07 22:18:37.376  INFO Poulamis-MacBook-Pro.local --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/Poulami-Sarkar/ekart-config//AddressMS.properties'}, MapPropertySource {name='https://github.com/Poulami-Sarkar/ekart-config//application.properties'}]}
+2020-12-07 22:18:37.406  INFO Poulamis-MacBook-Pro.local --- [           main] c.i.e.EkartAddressMsApplication          : No active profile set, falling back to default profiles: default
+2020-12-07 22:18:37.932  INFO Poulamis-MacBook-Pro.local --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-07 22:18:37.990  INFO Poulamis-MacBook-Pro.local --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53ms. Found 1 repository interfaces.
+2020-12-07 22:18:38.069  WARN Poulamis-MacBook-Pro.local --- [           main] o.s.b.a.e.EndpointId                     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-12-07 22:18:38.380  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=27b2a1b7-024f-321e-9596-f88b08d35ca4
+2020-12-07 22:18:38.610  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5c0d988] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-07 22:18:38.652  INFO Poulamis-MacBook-Pro.local --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$21dadc85] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-07 22:18:39.044  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 5001 (http)
+2020-12-07 22:18:39.055  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-5001"]
+2020-12-07 22:18:39.061  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-12-07 22:18:39.061  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/9.0.12
+2020-12-07 22:18:39.069  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/poulamisarkar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-12-07 22:18:39.199  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-12-07 22:18:39.200  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1785 ms
+2020-12-07 22:18:39.365  WARN Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2020-12-07 22:18:39.366  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-07 22:18:39.379  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.DynamicPropertyFactory             : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@702b656a
+2020-12-07 22:18:40.358  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-12-07 22:18:40.358  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-12-07 22:18:40.358  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'tracingFilter' to: [/*]
+2020-12-07 22:18:40.358  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-12-07 22:18:40.359  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-12-07 22:18:40.359  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'formContentFilter' to: [/*]
+2020-12-07 22:18:40.359  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2020-12-07 22:18:40.359  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpTraceFilter' to: [/*]
+2020-12-07 22:18:40.359  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2020-12-07 22:18:40.457  INFO Poulamis-MacBook-Pro.local --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12-07 22:18:40.461  WARN Poulamis-MacBook-Pro.local --- [           main] c.z.h.u.DriverDataSource                 : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-12-07 22:18:40.735  INFO Poulamis-MacBook-Pro.local --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12-07 22:18:40.786  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12-07 22:18:40.836  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.3.7.Final}
+2020-12-07 22:18:40.837  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2020-12-07 22:18:40.958  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-12-07 22:18:41.090  INFO Poulamis-MacBook-Pro.local --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-12-07 22:18:41.636  INFO Poulamis-MacBook-Pro.local --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-07 22:18:42.403  WARN Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2020-12-07 22:18:42.403  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.c.s.URLConfigurationSource           : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-07 22:18:42.711  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-07 22:18:42.791  WARN Poulamis-MacBook-Pro.local --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-07 22:18:43.554  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-12-07 22:18:43.591  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-07 22:18:43.591  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-12-07 22:18:43.608  INFO Poulamis-MacBook-Pro.local --- [on(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Completed initialization in 17 ms
+2020-12-07 22:18:43.671  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.n.e.InstanceInfoFactory            : Setting initial instance status as: STARTING
+2020-12-07 22:18:43.724  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Initializing Eureka in region us-east-1
+2020-12-07 22:18:43.795  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using JSON encoding codec LegacyJacksonJson
+2020-12-07 22:18:43.796  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using JSON decoding codec LegacyJacksonJson
+2020-12-07 22:18:43.958  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using XML encoding codec XStreamXml
+2020-12-07 22:18:43.959  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.p.DiscoveryJerseyProvider          : Using XML decoding codec XStreamXml
+2020-12-07 22:18:44.222  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-07 22:18:44.243  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Disable delta property : false
+2020-12-07 22:18:44.243  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Single vip registry refresh property : null
+2020-12-07 22:18:44.243  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Force full registry fetch : false
+2020-12-07 22:18:44.244  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Application is null : false
+2020-12-07 22:18:44.244  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Registered Applications size is zero : true
+2020-12-07 22:18:44.244  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Application version is -1: true
+2020-12-07 22:18:44.244  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Getting all instance registry info from the eureka server
+2020-12-07 22:18:44.349  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : The response status is 200
+2020-12-07 22:18:44.354  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Starting heartbeat executor: renew interval is: 30
+2020-12-07 22:18:44.359  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.InstanceInfoReplicator             : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-07 22:18:44.372  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Discovery Client initialized at timestamp 1607359724371 with initial instances count: 1
+2020-12-07 22:18:44.384  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADDRESSMS with eureka with status UP
+2020-12-07 22:18:44.384  INFO Poulamis-MacBook-Pro.local --- [           main] c.n.d.DiscoveryClient                    : Saw local status change event StatusChangeEvent [timestamp=1607359724384, current=UP, previous=STARTING]
+2020-12-07 22:18:44.385  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ADDRESSMS/192.168.1.8:AddressMS:d4eae3f61b403f106c787ee6aec137dc: registering service...
+2020-12-07 22:18:44.393  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-5001"]
+2020-12-07 22:18:44.398  INFO Poulamis-MacBook-Pro.local --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ADDRESSMS/192.168.1.8:AddressMS:d4eae3f61b403f106c787ee6aec137dc - registration status: 204
+2020-12-07 22:18:44.403  INFO Poulamis-MacBook-Pro.local --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2020-12-07 22:18:44.416  INFO Poulamis-MacBook-Pro.local --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 5001 (http) with context path ''
+2020-12-07 22:18:44.417  INFO Poulamis-MacBook-Pro.local --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 5001
+2020-12-07 22:18:44.419  INFO Poulamis-MacBook-Pro.local --- [           main] c.i.e.EkartAddressMsApplication          : Started EkartAddressMsApplication in 8.667 seconds (JVM running for 9.649)
+2020-12-07 22:18:49.044  INFO Poulamis-MacBook-Pro.local --- [rix-AccountMS-1] c.n.c.ChainedDynamicProperty             : Flipping property: AccountMS.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-07 22:18:49.077  INFO Poulamis-MacBook-Pro.local --- [rix-AccountMS-1] c.n.u.c.ShutdownEnabledTimer             : Shutdown hook installed for: NFLoadBalancer-PingTimer-AccountMS
+2020-12-07 22:18:49.078  INFO Poulamis-MacBook-Pro.local --- [rix-AccountMS-1] c.n.l.BaseLoadBalancer                   : Client: AccountMS instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=AccountMS,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-12-07 22:18:49.088  INFO Poulamis-MacBook-Pro.local --- [rix-AccountMS-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2020-12-07 22:18:49.110  INFO Poulamis-MacBook-Pro.local --- [rix-AccountMS-1] c.n.c.ChainedDynamicProperty             : Flipping property: AccountMS.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-07 22:18:49.115  INFO Poulamis-MacBook-Pro.local --- [rix-AccountMS-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client AccountMS initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=AccountMS,current list of Servers=[192.168.1.8:5000],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.8:5000;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 05:30:00 IST 1970;	First connection made: Thu Jan 01 05:30:00 IST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@1a10faf9
+2020-12-07 22:18:49.240  INFO Poulamis-MacBook-Pro.local --- [nio-5001-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-12-07 22:18:50.091  INFO Poulamis-MacBook-Pro.local --- [erListUpdater-0] c.n.c.ChainedDynamicProperty             : Flipping property: AccountMS.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647

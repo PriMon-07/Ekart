@@ -117,7 +117,7 @@ public class AddressAPI {
 
 	}
 
-	@RequestMapping(value = MODIFY_ADDRESS_URI, method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	@RequestMapping(value = MODIFY_ADDRESS_URI, method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public ResponseEntity<String> getAddress(@PathVariable String userid, @PathVariable String addressid,
 			@Valid @RequestBody Address address, BindingResult result) throws UserNotLoggedInException {
 
@@ -156,7 +156,7 @@ public class AddressAPI {
 		return new ResponseEntity<>(message, status);
 	}
 
-	@RequestMapping(value = DELETE_ADDRESS_URI, method = RequestMethod.POST)
+	@RequestMapping(value = DELETE_ADDRESS_URI, method = RequestMethod.DELETE)
 	public ResponseEntity<String> deleteAddress(@PathVariable String userid, @PathVariable String addressid)
 			throws UserNotLoggedInException {
 
