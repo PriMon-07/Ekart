@@ -1,5 +1,6 @@
 package com.infosys.ekart.account.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -8,9 +9,13 @@ import javax.persistence.Table;
 @Table(name = "UserData")
 public class UserEntity {
 	@Id
+	@Column
 	String userId;
+	@Column
 	String name;
+	@Column
 	String password;
+	@Column
 	String accountType;
 
 	public String getUserId() {

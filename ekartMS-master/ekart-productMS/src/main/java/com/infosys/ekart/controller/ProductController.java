@@ -15,6 +15,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -177,6 +178,9 @@ public class ProductController {
 		}
 	}
 	
+	//@PutMapping(value="{userId}/update", produces = "application/json")
+	//public 
+	
 	/*
 	@GetMapping(value = ApplicationConstants.GET_USER_CART,  produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<CartDTO> displayUserCart(@PathVariable String sellerId) {
@@ -195,6 +199,8 @@ public class ProductController {
 	*/
 	
 	// update cart price /cart/{seller}/updateprice
+	
+	/*
 	@PostMapping(value = ApplicationConstants.POST_UPDATE_CART, consumes = MediaType.APPLICATION_JSON_VALUE)
 	public String modifyOfferCartPrice(@RequestBody CartOfferDTO cartOfferDTO,
 			@PathVariable String userId, @PathVariable String productName) {
@@ -205,7 +211,9 @@ public class ProductController {
 		logger.info("Offer price added");
 		return status;
 	}
-
+	*/
+	
+	/*
 	// /{sellerName}/sellerorders
 	@GetMapping(value = ApplicationConstants.GET_SELLER_ORDER, produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<UiOrderDTO> getOrders(@PathVariable String sellerName) {
@@ -215,7 +223,8 @@ public class ProductController {
 		return orderDTOList;
 
 	}
-
+	*/
+	/*
 	//change order status to deliver
 	@GetMapping(value = ApplicationConstants.GET_DELIVER_ORDER, produces = MediaType.APPLICATION_JSON_VALUE)
 	public String deliverOrder(@PathVariable String userId,
@@ -234,4 +243,5 @@ public class ProductController {
 			String status1 = new RestTemplate().postForObject("http://localhost:5002/notifications/add", notificationDTO, String.class);																				
 		return "success";
 	}
+	*/
 }
