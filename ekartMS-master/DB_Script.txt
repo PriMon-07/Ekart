@@ -1,0 +1,6 @@
+create schema `ekart-carddetails`;
+create table `ekart-carddetails`.`card_details` (card_id integer not null auto_increment, card_number varchar(255), expiry_month varchar(255), expiry_year varchar(255), name_on_card varchar(255), user_id varchar(255), primary key (card_id));
+
+create schema `ekart-productdetails`;
+create table `ekart-productdetails`.`product` (product_id integer not null auto_increment, category varchar(255), delivery_charge float, description varchar(255), discount float, display_name varchar(255), price float, seller_id varchar(255), short_desc varchar(255), primary key (product_id));
+create table `ekart-productdetails`.`category_recommendation `(category varchar(255) not null, category_recommendation varchar(255), primary key (category));

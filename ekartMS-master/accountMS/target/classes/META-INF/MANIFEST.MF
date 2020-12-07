@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: poulamisarkar
+Build-Jdk: 15.0.1
+Implementation-Title: AccountMS
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.infosys.ekart
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/AccountMS
+Created-By: Maven Integration for Eclipse
+
