@@ -26,6 +26,7 @@ import com.infosys.ekart.constants.ApplicationConstants;
 import com.infosys.ekart.exception.CanNotBeEmptyException;
 import com.infosys.ekart.exception.ProductNameAlreadyPresent;
 import com.infosys.ekart.model.BaseResponse;
+import com.infosys.ekart.model.CartDTO;
 import com.infosys.ekart.model.CartOfferDTO;
 import com.infosys.ekart.model.DealsModel;
 import com.infosys.ekart.model.NotificationModel;
@@ -176,20 +177,23 @@ public class ProductController {
 		}
 	}
 	
+	/*
 	@GetMapping(value = ApplicationConstants.GET_USER_CART,  produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<CartDTO> displayUserCart(@PathVariable String sellerId) {
 		logger.info("Displaying total product in cart");
 		@SuppressWarnings("unchecked")
-		UserCartDTO[] userCartDTOs;
-		List<UserCartDTO> ucDTOs = new ArrayList<>();
-		userCartDTOs = new RestTemplate().getForObject("http://localhost:5000/searchcartseller/" + sellerId,UserCartDTO[].class); 
+		CartDTO[] userCartDTOs;
+		List<CartDTO> ucDTOs = new ArrayList<>();
+		userCartDTOs = new RestTemplate().getForObject("http://localhost:5000/searchcartseller/" + sellerId,CartDTO[].class); 
 		System.out.println("UserCartDTOs -> "+userCartDTOs);
-		for (UserCartDTO user : userCartDTOs) {
+		for (CartDTO user : userCartDTOs) {
 			System.out.println("inside list->"+user);
 			ucDTOs.add(user);
 		}
 		return productServiceImpl.displayUserCart(ucDTOs, sellerId);
 	}
+	*/
+	
 	// update cart price /cart/{seller}/updateprice
 	@PostMapping(value = ApplicationConstants.POST_UPDATE_CART, consumes = MediaType.APPLICATION_JSON_VALUE)
 	public String modifyOfferCartPrice(@RequestBody CartOfferDTO cartOfferDTO,
