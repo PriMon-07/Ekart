@@ -2190,3 +2190,48 @@ Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.
 2020-12-08 00:24:01.758  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
 2020-12-08 00:29:01.771  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
 2020-12-08 00:34:01.782  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 00:48:15.131  WARN Poulamis-MacBook-Pro.local --- [l-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m46s805ms).
+2020-12-08 00:48:18.947  INFO Poulamis-MacBook-Pro.local --- [tbeatExecutor-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ADDRESSMS/192.168.1.8:AddressMS:060fed8b0200ffe9b574a1440cb23d48 - Re-registering apps/ADDRESSMS
+2020-12-08 00:48:18.948  INFO Poulamis-MacBook-Pro.local --- [tbeatExecutor-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ADDRESSMS/192.168.1.8:AddressMS:060fed8b0200ffe9b574a1440cb23d48: registering service...
+2020-12-08 00:48:18.980  INFO Poulamis-MacBook-Pro.local --- [tbeatExecutor-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ADDRESSMS/192.168.1.8:AddressMS:060fed8b0200ffe9b574a1440cb23d48 - registration status: 204
+2020-12-08 01:03:28.169  WARN Poulamis-MacBook-Pro.local --- [l-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m43s26ms).
+2020-12-08 01:18:41.278  WARN Poulamis-MacBook-Pro.local --- [l-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m43s104ms).
+2020-12-08 01:33:37.525  WARN Poulamis-MacBook-Pro.local --- [l-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m26s237ms).
+2020-12-08 01:34:40.934  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 01:39:40.942  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 01:44:40.952  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 01:48:41.781  WARN Poulamis-MacBook-Pro.local --- [l-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m4s114ms).
+2020-12-08 02:03:25.926  WARN Poulamis-MacBook-Pro.local --- [l-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m44s144ms).
+2020-12-08 02:18:40.138  WARN Poulamis-MacBook-Pro.local --- [l-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m44s180ms).
+2020-12-08 02:33:54.262  WARN Poulamis-MacBook-Pro.local --- [l-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m44s117ms).
+2020-12-08 02:33:57.335  INFO Poulamis-MacBook-Pro.local --- [tbeatExecutor-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ADDRESSMS/192.168.1.8:AddressMS:060fed8b0200ffe9b574a1440cb23d48 - Re-registering apps/ADDRESSMS
+2020-12-08 02:33:57.336  INFO Poulamis-MacBook-Pro.local --- [tbeatExecutor-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ADDRESSMS/192.168.1.8:AddressMS:060fed8b0200ffe9b574a1440cb23d48: registering service...
+2020-12-08 02:33:57.341  INFO Poulamis-MacBook-Pro.local --- [tbeatExecutor-0] c.n.d.DiscoveryClient                    : DiscoveryClient_ADDRESSMS/192.168.1.8:AddressMS:060fed8b0200ffe9b574a1440cb23d48 - registration status: 204
+2020-12-08 02:48:37.926  WARN Poulamis-MacBook-Pro.local --- [l-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m43s664ms).
+2020-12-08 04:05:11.112  WARN Poulamis-MacBook-Pro.local --- [l-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h16m3s156ms).
+2020-12-08 04:05:42.773  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 05:15:01.718  WARN Poulamis-MacBook-Pro.local --- [l-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h9m20s595ms).
+2020-12-08 05:49:03.725  WARN Poulamis-MacBook-Pro.local --- [l-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m2s3ms).
+2020-12-08 06:48:56.780  WARN Poulamis-MacBook-Pro.local --- [l-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59m23s44ms).
+2020-12-08 08:37:13.786  WARN Poulamis-MacBook-Pro.local --- [l-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h47m46s995ms).
+2020-12-08 08:45:15.641  WARN Poulamis-MacBook-Pro.local --- [l-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m31s837ms).
+2020-12-08 08:45:17.246  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 08:50:17.257  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 08:55:17.241  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 09:00:17.253  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 09:05:17.257  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 09:10:17.263  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 09:15:17.271  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 09:20:17.276  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 09:25:17.278  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 09:30:17.285  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 09:35:17.287  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 09:40:17.295  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 09:45:17.299  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 09:50:17.305  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 09:55:17.304  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 10:00:17.310  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 10:05:17.315  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 10:10:17.306  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 10:15:17.319  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2020-12-08 10:20:17.324  INFO Poulamis-MacBook-Pro.local --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
